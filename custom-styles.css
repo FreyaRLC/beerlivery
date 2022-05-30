@@ -33,6 +33,12 @@ footer input {
   max-height: 120px;
 }
 
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 45px;
+}
+
 @media (min-width: 769px) {
   .smagskasser-header {
     padding: unset;
