@@ -2,3 +2,21 @@
   max-width: 149px;
   max-height: 95px;
 }
+.elementor-element.elementor-element-7cff924.elementor-widget.elementor-widget-image
+  img {
+  max-width: 200px;
+}
+
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer form,
+#news_letter,
+.news_letter_title {
+  color: white !important;
+}
+
+footer input {
+  border: solid 1px white !important;
+}
