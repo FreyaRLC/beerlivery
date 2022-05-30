@@ -77,13 +77,13 @@ get_header(); ?>
 
 			smagskasser.forEach((smagskasse) => {
             	const klon = template.cloneNode(true).content;
-            	klon.querySelector(".billede").src = ret.billede.guid;
-           		klon.querySelector(".titel").textContent = ret.title.rendered;
-            	klon.querySelector(".info").textContent = ret.kort_beskrivelse;
-            	klon.querySelector(".pris").textContent = ret.pris + " kr.";
+            	klon.querySelector(".billede").src = smagskasse.billede.guid;
+           		klon.querySelector(".titel").textContent = smagskasse.title.rendered;
+            	klon.querySelector(".info").textContent = smagskasse.kort_beskrivelse;
+            	klon.querySelector(".pris").textContent = smagskasse.pris + " kr.";
             	klon
               		.querySelector("article")
-              		.addEventListener("click", () => { location.href = ret.link; })
+              		.addEventListener("click", () => { location.href = smagskasse.link; })
             	container.appendChild(klon);
         });
       }
