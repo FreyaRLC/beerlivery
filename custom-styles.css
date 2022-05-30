@@ -7,6 +7,10 @@
   max-width: 200px;
 }
 
+button {
+  width: 130px;
+}
+
 footer p,
 footer h1,
 footer h2,
@@ -28,7 +32,7 @@ footer input {
   max-height: 120px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .smagskasser-header {
     padding: unset;
     width: 100vw;
