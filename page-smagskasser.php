@@ -50,6 +50,7 @@ get_header(); ?>
     console.log("detvirker")
     console.log("LoadSite")
 	 
+    // dette er et endpoint, her ser vi vores custom posts fordi der står "smagskasse" til sidst som er vores slug
 	const url = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/smagskasse?per_page=100";
     
     // denne skal bruges hvis man bruger kategorier
@@ -78,9 +79,9 @@ get_header(); ?>
 			smagskasser.forEach((smagskasse) => {
             	const klon = template.cloneNode(true).content;
             	klon.querySelector(".billede").src = smagskasse.billede.guid;
-           		klon.querySelector(".titel").textContent = smagskasse.title.rendered;
-            	klon.querySelector(".info").textContent = smagskasse.kort_beskrivelse;
-            	klon.querySelector(".pris").textContent = smagskasse.pris + " kr.";
+            	klon.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
+                klon.querySelector(".titel").textContent = smagskasse.title.rendered;
+            	klon.querySelector(".pris").textContent = smagskasse.pris;
             	klon
               		.querySelector("article")
               		.addEventListener("click", () => { location.href = smagskasse.link; })
