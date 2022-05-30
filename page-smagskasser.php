@@ -13,7 +13,7 @@ get_header(); ?>
 
 <p>Vi har blandet nogle af vores mest velsmagende og spændende øl i smagskasser, så du kan få en blandet kasse med lige den øltype, du bedst kan lide.</p>
 
-
+<h2>Her ser du vores sortiment af smagskasser.</h2>
 
  <template>
         <article class="klikbar">
