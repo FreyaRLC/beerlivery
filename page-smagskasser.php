@@ -9,6 +9,11 @@
  */
 get_header(); ?>
 
+<img src="billeder/specialøl-billede-1" alt="header billede med specialøl">
+
+<p>Vi har blandet nogle af vores mest velsmagende og spændende øl i smagskasser, så du kan få en blandet kasse med lige den øltype, du bedst kan lide.</p>
+
+
 
  <template>
         <article class="klikbar">
