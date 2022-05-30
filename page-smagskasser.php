@@ -9,11 +9,7 @@
  */
 get_header(); ?>
 
-<img src="billeder/specialøl-billede-1" alt="header billede med specialøl">
 
-<p>Vi har blandet nogle af vores mest velsmagende og spændende øl i smagskasser, så du kan få en blandet kasse med lige den øltype, du bedst kan lide.</p>
-
-<h2>Her ser du vores sortiment af smagskasser.</h2>
 
  <template>
         <article class="klikbar">
@@ -37,7 +33,13 @@ get_header(); ?>
                     <div class="content" role="main"  >
 
                        <!-- Dette er den container alle hvor alt info bliver puttet ind efter template er kopieret og loopet igennem med json -->
-	 <section id="container"></section>
+	 
+                        <img src="billeder/specialøl-billede-1" alt="header billede med specialøl">
+                        <p>Vi har blandet nogle af vores mest velsmagende og spændende øl i smagskasser, så du kan få en blandet kasse med lige den øltype, du bedst kan lide.</p>
+                        <h2>Her ser du vores sortiment af smagskasser.</h2>
+
+     
+                       <section id="container"></section>
 
 
                     </div><!-- end content -->
