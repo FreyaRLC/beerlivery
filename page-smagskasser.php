@@ -14,14 +14,16 @@ get_header(); ?>
  <template>
         <article class="klikbar">
           <img class="billede" src="" alt="" />
-          <p class="typeprodukt"></p>
-          <h2 class="titel"></h2>
-          <p class="pris"></p>
-          <p class="langbeskrivelse"></p>
-          <p class="kortbeskrivelse"></p>
-          <p class="lagerinfo"></p>
-          <p class="varenummer"></p>
-          <p class="oltyper"></p>
+          <div class="smagskasse-info">
+            <p class="typeprodukt"></p>
+            <h2 class="titel"></h2>
+            <p class="pris"></p>
+            <p class="langbeskrivelse"></p>
+            <p class="kortbeskrivelse"></p>
+            <p class="lagerinfo"></p>
+            <p class="varenummer"></p>
+            <p class="oltyper"></p>
+          </div>
         </article>
       </template>
 

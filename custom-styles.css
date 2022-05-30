@@ -39,6 +39,12 @@ footer input {
   gap: 45px;
 }
 
+.smagskasse-info {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 50px);
+  margin-bottom: 3rem;
+}
+
 @media (min-width: 769px) {
   .smagskasser-header {
     padding: unset;
