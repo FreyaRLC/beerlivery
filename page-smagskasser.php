@@ -30,7 +30,7 @@ get_header(); ?>
             <div class="aux-container aux-fold">
 
                 <div id="primary" class="aux-primary" >
-                    <div class="content" role="main"  >
+                    <div class="content main-smagskasser" role="main"  >
 
                        <!-- Dette er den container alle hvor alt info bliver puttet ind efter template er kopieret og loopet igennem med json -->
 	 
