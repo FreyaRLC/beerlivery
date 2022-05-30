@@ -9,6 +9,21 @@
  */
 get_header(); ?>
 
+
+ <template>
+        <article class="klikbar">
+          <img class="billede" src="" alt="" />
+          <p class="typeprodukt"></p>
+          <h2 class="titel"></h2>
+          <p class="pris"></p>
+          <p class="langbeskrivelse"></p>
+          <p class="kortbeskrivelse"></p>
+          <p class="lagerinfo"></p>
+          <p class="varenummer"></p>
+          <p class="oltyper"></p>
+        </article>
+      </template>
+
     <main id="main" <?php auxin_content_main_class(); ?> >
         <div class="aux-wrapper">
             <div class="aux-container aux-fold">
@@ -16,11 +31,9 @@ get_header(); ?>
                 <div id="primary" class="aux-primary" >
                     <div class="content" role="main"  >
 
-                        <?php
-                        if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'single' ) ) {
-                            get_template_part('templates/theme-parts/content' );
-                        }
-                        ?>
+                       <!-- Dette er den container alle hvor alt info bliver puttet ind efter template er kopieret og loopet igennem med json -->
+	 <section id="container"></section>
+
 
                     </div><!-- end content -->
                 </div><!-- end primary -->
@@ -33,3 +46,8 @@ get_header(); ?>
 
 <?php get_sidebar('footer'); ?>
 <?php get_footer(); ?>
+
+
+
+
+
