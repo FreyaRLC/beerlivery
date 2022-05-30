@@ -40,7 +40,12 @@ footer input {
 }
 
 .smagskasse-info {
+  padding-top: 1rem;
   text-align: center;
+}
+
+.typeprodukt {
+  margin: unset;
 }
 
 @media (min-width: 769px) {
