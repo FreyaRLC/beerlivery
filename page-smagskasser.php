@@ -81,7 +81,7 @@ get_header(); ?>
             	klon.querySelector(".billede").src = smagskasse.billede.guid;
             	klon.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
                 klon.querySelector(".titel").textContent = smagskasse.title.rendered;
-            	klon.querySelector(".pris").textContent = smagskasse.pris;
+            	klon.querySelector(".pris").textContent = smagskasse.pris " kr.";
             	klon
               		.querySelector("article")
               		.addEventListener("click", () => { location.href = smagskasse.link; })
