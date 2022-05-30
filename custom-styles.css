@@ -20,3 +20,18 @@ footer form,
 footer input {
   border: solid 1px white !important;
 }
+
+/* smagskasser side */
+
+.smagskasser-header {
+  width: 100%;
+  max-height: 120px;
+}
+
+@media (min-width: 768px) {
+  .smagskasser-header {
+    padding: unset;
+    width: 100vw;
+    max-height: 120px;
+  }
+}
