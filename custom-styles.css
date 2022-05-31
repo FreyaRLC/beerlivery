@@ -94,6 +94,8 @@ p {
 .smagskasser-header {
   width: 100%;
   max-height: 390px;
+  background-image: url(billeder/specialøl-billede-1.jpg);
+  background-size: cover;
 }
 
 #container {
