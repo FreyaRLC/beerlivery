@@ -21,17 +21,16 @@ get_header(); ?>
 
                         <article class="klikbar">
                             <img class="billede" src="" alt="" />
-                            <div class="smagskasse-info">
-                                <p class="typeprodukt"></p>
-                                <h2 class="titel"></h2>
-                                <p class="pris"></p>
-                                <p class="langbeskrivelse"></p>
+                            <h2 class="titel"></h2>
+                            <p class="pris"></p>
                                 <p class="kortbeskrivelse"></p>
                                 <p class="lagerinfo"></p>
-                                <p class="varenummer"></p>
-                                <p class="oltyper"></p>
                                 <button class="button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase">Tilføj til kurv</button>
-                            </div>
+                                <p class="varenummer"></p>
+                                <p class="langbeskrivelse"></p>
+                                <p class="oltyper"></p>
+                                <p class="typeprodukt"></p>
+                               
                         </article>
         
 
