@@ -61,17 +61,17 @@ get_header(); ?>
 
         function vis(){
 
-          klon.querySelector(".billede").src = smagskasse.billede.guid;
-          klon.querySelector(".titel").textContent = smagskasse.title.rendered;
-          klon.querySelector(".pris").textContent = smagskasse.pris + " kr.";
-          klon.querySelector(".kortbeskrivelse").textContent = smagskasse.kortbeskrivelse;
-          klon.querySelector(".lagerinfo").textContent = smagskasse.lagerinfo;
-          klon.querySelector(".varenummer").textContent = smagskasse.varenummer;
-          klon.querySelector(".langbeskrivelse").textContent = smagskasse.langbeskrivelse;
-          klon.querySelector(".oltyper").textContent = smagskasse.oltyper;
+          document.querySelector(".billede").src = smagskasse.billede.guid;
+          document.querySelector(".titel").textContent = smagskasse.title.rendered;
+          document.querySelector(".pris").textContent = smagskasse.pris + " kr.";
+          document.querySelector(".kortbeskrivelse").textContent = smagskasse.kortbeskrivelse;
+          document.querySelector(".lagerinfo").textContent = smagskasse.lagerinfo;
+          document.querySelector(".varenummer").textContent = smagskasse.varenummer;
+          document.querySelector(".langbeskrivelse").textContent = smagskasse.langbeskrivelse;
+          document.querySelector(".oltyper").textContent = smagskasse.oltyper;
 
 
-          klon.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
+          document.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
           
           
         }
