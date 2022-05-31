@@ -15,6 +15,11 @@ button,
   width: 160px;
   cursor: pointer;
 }
+
+.button {
+  background-color: #0b5159;
+}
+
 /* Alt text i footer skal være hvidt */
 footer p,
 footer h1,
