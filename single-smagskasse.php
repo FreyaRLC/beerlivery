@@ -48,6 +48,49 @@ get_header(); ?>
 
 <script>
 
+    const urlParams = new URLSearchParams(window.location.search);
+        const id = <?php echo get_the_ID() ?>;
+        console.log({id});
+        let smagskasse;
+
+        const url = `https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/smagskasse/${id}`;
+
+        async function hentData() {
+        console.log("hentData");
+        const respons = await fetch(url);
+        projekt = await respons.json();
+        console.log({smagskasse});
+        vis();
+        }
+
+        function vis(){
+
+          klon.querySelector(".billede").src = smagskasse.billede.guid;
+          klon.querySelector(".titel").textContent = smagskasse.title.rendered;
+          klon.querySelector(".pris").textContent = smagskasse.pris + " kr.";
+          klon.querySelector(".kortbeskrivelse").textContent = smagskasse.kortbeskrivelse;
+          klon.querySelector(".lagerinfo").textContent = smagskasse.lagerinfo;
+          klon.querySelector(".varenummer").textContent = smagskasse.varenummer;
+          klon.querySelector(".langbeskrivelse").textContent = smagskasse.langbeskrivelse;
+          klon.querySelector(".oltyper").textContent = smagskasse.oltyper;
+
+
+          klon.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
+          
+          
+        }
+
+        smagskasser.forEach((smagskasse) => {
+            	const klon = template.cloneNode(true).content;
+            	
+            	klon
+              		.querySelector("article")
+              		.addEventListener("click", () => { location.href = smagskasse.link; })
+            	container.appendChild(klon);
+        });
+
+        hentData();
+
      document.querySelector(".tilbage").addEventListener("click", ()=>{ history.back()});
 </script>
 
