@@ -80,14 +80,14 @@ get_header(); ?>
           
         }
 
-        smagskasser.forEach((smagskasse) => {
-            	const klon = template.cloneNode(true).content;
+        // smagskasser.forEach((smagskasse) => {
+        //     	const klon = template.cloneNode(true).content;
             	
-            	klon
-              		.querySelector("article")
-              		.addEventListener("click", () => { location.href = smagskasse.link; })
-            	container.appendChild(klon);
-        });
+        //     	klon
+        //       		.querySelector("article")
+        //       		.addEventListener("click", () => { location.href = smagskasse.link; })
+        //     	container.appendChild(klon);
+        // });
 
         hentData();
 
