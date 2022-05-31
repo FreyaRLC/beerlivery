@@ -17,7 +17,7 @@ get_header(); ?>
                 <div id="primary" class="aux-primary" >
                     <div class="content" role="main"  >
         
-                    <button class="tilbage button" >Tilbage</button>
+                    <button class="tilbage button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase" >Tilbage</button>
 
                         <article class="klikbar">
                             <img class="billede" src="" alt="" />
