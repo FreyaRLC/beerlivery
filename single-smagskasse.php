@@ -39,7 +39,7 @@ get_header(); ?>
                 </div><!-- end primary -->
 
 
-                <?php get_sidebar(); ?>
+                
 
 
             </div><!-- end container -->
