@@ -3,6 +3,7 @@
   --primary-orange: #cc5500;
   --secondary-beige: #dbd3c8;
   --secondary-blue: #65a5ac;
+  --lille-tekst: 14px;
 }
 
 #logo {
@@ -120,7 +121,7 @@ p {
 
 .lille_tekst {
   /* aka 14px */
-  font-size: 0.875rem;
+  font-size: var(--lille-tekst);
 }
 
 hr {
@@ -134,11 +135,17 @@ hr {
   color: var(--primary-blue);
 }
 
-.single-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
+@media (min-width: 1200px) {
+  .single-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.single-tekst {
-  grid-column: 2;
+  .single-tekst {
+    grid-column: 2;
+  }
+
+  hr {
+    padding-top: 3rem;
+  }
 }
