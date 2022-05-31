@@ -10,7 +10,8 @@
   max-width: 200px;
 }
 
-button {
+button,
+.button {
   width: 160px;
   cursor: pointer;
 }
@@ -23,6 +24,10 @@ footer form,
 #news_letter,
 .news_letter_title {
   color: white !important;
+}
+
+.sund-ID {
+  border: solid white 2px;
 }
 
 footer input {

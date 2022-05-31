@@ -23,7 +23,7 @@ get_header(); ?>
             <p class="lagerinfo"></p>
             <p class="varenummer"></p>
             <p class="oltyper"></p>
-            <button>Mere info</button>
+            <button class="button">Mere info</button>
           </div>
         </article>
       </template>
