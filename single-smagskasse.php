@@ -33,10 +33,11 @@ get_header(); ?>
                                 <p class="langbeskrivelse"></p>
                                 <p class="oltyper"></p>
                                 <p class="typeprodukt"></p>
+                                
+                                </div>
+                                </div>
                                 <p class="indhold-titel"></p>
                                 <p class="smagskasse-indhold"></p>
-                                </div>
-                                </div>
                                
                         </article>
         
