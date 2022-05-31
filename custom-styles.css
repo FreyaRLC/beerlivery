@@ -138,6 +138,10 @@ hr {
   padding-right: 0px;
 }
 
+.typeprodukt {
+  font-size: var(--lille-tekst);
+}
+
 @media (min-width: 1200px) {
   .single-grid {
     display: grid;
@@ -150,5 +154,9 @@ hr {
 
   hr {
     padding-top: 3rem;
+  }
+
+  .smagskasse-indhold {
+    column-count: 2;
   }
 }

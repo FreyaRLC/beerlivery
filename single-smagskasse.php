@@ -33,6 +33,8 @@ get_header(); ?>
                                 <p class="langbeskrivelse"></p>
                                 <p class="oltyper"></p>
                                 <p class="typeprodukt"></p>
+                                <p class="indhold-titel"></p>
+                                <p class="smagskasse-indhold"></p>
                                 </div>
                                 </div>
                                
@@ -74,9 +76,13 @@ get_header(); ?>
           document.querySelector(".varenummer").textContent = smagskasse.varenummer;
           document.querySelector(".langbeskrivelse").textContent = smagskasse.langbeskrivelse;
           document.querySelector(".oltyper").textContent = smagskasse.oltyper;
-
-
           document.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
+
+
+          document.querySelector(".indhold-titel").innerHTML = smagskasse.indhold-titel;
+          document.querySelector(".smagskasse-indhold").innerHTML = smagskasse.smagskasse-indhold;
+
+
           
           
         }
