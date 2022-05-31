@@ -26,7 +26,8 @@ get_header(); ?>
                                 <p class="kortbeskrivelse"></p>
                                 <p class="lagerinfo"></p>
                                 <button class="button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase">Tilføj til kurv</button>
-                                <p class="varenummer"></p>
+                                <p class="varenummer lille_tekst"></p>
+                                <hr>
                                 <p class="langbeskrivelse"></p>
                                 <p class="oltyper"></p>
                                 <p class="typeprodukt"></p>
