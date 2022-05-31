@@ -134,6 +134,10 @@ hr {
   color: var(--primary-blue) !important;
 }
 
+.right-sidebar > .aux-wrapper > .aux-container {
+  padding-right: 0px;
+}
+
 @media (min-width: 1200px) {
   .single-grid {
     display: grid;

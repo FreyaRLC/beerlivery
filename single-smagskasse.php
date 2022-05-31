@@ -81,15 +81,6 @@ get_header(); ?>
           
         }
 
-        // smagskasser.forEach((smagskasse) => {
-        //     	const klon = template.cloneNode(true).content;
-            	
-        //     	klon
-        //       		.querySelector("article")
-        //       		.addEventListener("click", () => { location.href = smagskasse.link; })
-        //     	container.appendChild(klon);
-        // });
-
      document.querySelector(".tilbage").addEventListener("click", ()=>{ history.back()});
 </script>
 
