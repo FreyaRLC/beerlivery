@@ -20,7 +20,9 @@ get_header(); ?>
                     <button class="tilbage button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase" >Tilbage</button>
 
                         <article class="klikbar">
+                            <div class="single-grid">
                             <img class="billede" src="" alt="" />
+                            <div class="single-tekst">
                             <h2 class="titel"></h2>
                             <p class="pris"></p>
                                 <p class="kortbeskrivelse"></p>
@@ -31,6 +33,8 @@ get_header(); ?>
                                 <p class="langbeskrivelse"></p>
                                 <p class="oltyper"></p>
                                 <p class="typeprodukt"></p>
+                                </div>
+                                </div>
                                
                         </article>
         

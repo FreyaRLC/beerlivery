@@ -133,3 +133,12 @@ hr {
   border-width: 3px;
   color: var(--primary-blue);
 }
+
+.single-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.single-tekst {
+  grid-column: 2;
+}
