@@ -20,19 +20,19 @@ get_header(); ?>
                     <button class="tilbage button" >Tilbage</button>
 
                         <article class="klikbar">
-                        <img class="billede" src="" alt="" />
-                        <div class="smagskasse-info">
-                            <p class="typeprodukt"></p>
-                            <h2 class="titel"></h2>
-                            <p class="pris"></p>
-                            <p class="langbeskrivelse"></p>
-                            <p class="kortbeskrivelse"></p>
-                            <p class="lagerinfo"></p>
-                            <p class="varenummer"></p>
-                            <p class="oltyper"></p>
-                            <button class="button">Tilføj til kurv</button>
-                        </div>
-        </article>
+                            <img class="billede" src="" alt="" />
+                            <div class="smagskasse-info">
+                                <p class="typeprodukt"></p>
+                                <h2 class="titel"></h2>
+                                <p class="pris"></p>
+                                <p class="langbeskrivelse"></p>
+                                <p class="kortbeskrivelse"></p>
+                                <p class="lagerinfo"></p>
+                                <p class="varenummer"></p>
+                                <p class="oltyper"></p>
+                                <button class="button aux-button">Tilføj til kurv</button>
+                            </div>
+                        </article>
         
 
                     </div><!-- end content -->
