@@ -17,8 +17,9 @@ button,
 }
 
 .button {
-  background-color: #0b5159;
-  color: white;
+  background-color: #0b5159 !important;
+  color: white !important;
+  text-shadow: none !important;
 }
 
 /* Alt text i footer skal være hvidt */
