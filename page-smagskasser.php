@@ -57,7 +57,6 @@ get_header(); ?>
 
 
 <script>
-    console.log("detvirker")
     console.log("LoadSite")
 	 
     // dette er et endpoint, her ser vi vores custom posts fordi der står "smagskasse" til sidst som er vores slug
