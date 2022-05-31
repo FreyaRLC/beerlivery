@@ -16,21 +16,10 @@ get_header(); ?>
 
                 <div id="primary" class="aux-primary" >
                     <div class="content" role="main"  >
+        
+                    <button class="tilbage button" >Tilbage</button>
 
-                        <?php
-                        if ( ! ( function_exists( 'auxin_theme_do_location' ) && auxin_theme_do_location( 'single' ) ) && ! ( function_exists( 'elementor_theme_do_location' ) && elementor_theme_do_location( 'single' ) ) ) {
-                            $is_pass_protected = post_password_required();
-
-                            if ( have_posts() && ! $is_pass_protected ) {
-                                get_template_part('templates/theme-parts/single', get_post_type() );
-                                comments_template( '/comments.php', true );
-                            } elseif( $is_pass_protected ) {
-                                echo get_the_password_form();
-                            } else {
-                                get_template_part('templates/theme-parts/content', 'none' );
-                            }
-                        }
-                        ?>
+                        
 
                     </div><!-- end content -->
                 </div><!-- end primary -->
@@ -42,6 +31,11 @@ get_header(); ?>
             </div><!-- end container -->
         </div><!-- end wrapper -->
     </main><!-- end main -->
+
+<script>
+
+     document.querySelector(".tilbage").addEventListener("click", ()=>{ history.back()});
+</script>
 
 <?php get_sidebar('footer'); ?>
 <?php get_footer(); ?>
