@@ -48,16 +48,20 @@ get_header(); ?>
 
 <script>
 
-    let smagskasse;
-    document.addEventListener("DOMContentLoaded", getJson);
+    const urlParams = new URLSearchParams(window.location.search);
+        const id = <?php echo get_the_ID() ?>;
+        console.log({id});
+        let smagskasse;
 
-    async function getJson(){
-        console.log({ smagskasser });
-    let jsonData = await fetch(`https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/smagskasse/<?php echo get_the_ID() ?>`);
-    smagskasse = await jsonData.json();
-    vis();
-    }
-        
+        const url = `https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/smagskasse/${id}`;
+
+        async function hentData() {
+        console.log("hentData");
+        const respons = await fetch(url);
+        projekt = await respons.json();
+        console.log({smagskasse});
+        vis();
+        }
 
         function vis(){
 
@@ -84,6 +88,8 @@ get_header(); ?>
         //       		.addEventListener("click", () => { location.href = smagskasse.link; })
         //     	container.appendChild(klon);
         // });
+
+        hentData();
 
      document.querySelector(".tilbage").addEventListener("click", ()=>{ history.back()});
 </script>
