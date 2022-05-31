@@ -52,9 +52,11 @@ get_header(); ?>
     document.addEventListener("DOMContentLoaded", getJson);
 
     async function getJson(){
-        console.log({ smagskasser });
+        console.log("Id er", <?php echo get_the_ID()?>);
+        
     let jsonData = await fetch(`https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/smagskasse/<?php echo get_the_ID() ?>`);
     smagskasse = await jsonData.json();
+    console.log({ smagskasser });
     vis();
     }
         
