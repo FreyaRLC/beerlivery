@@ -12,10 +12,11 @@
   max-height: 95px;
 }
 
-/* Max width på logo i footer */
+/* Max width på logo i footer og sunhedsstyrelsen id ting*/
 .elementor-element.elementor-element-7cff924.elementor-widget.elementor-widget-image
-  img {
-  max-width: 200px;
+  img,
+.sund-ID {
+  max-width: 200px !important;
 }
 
 button,
@@ -43,6 +44,8 @@ footer form,
 
 .sund-ID {
   border: solid white 2px;
+  aspect-ratio: 1;
+  margin: auto;
 }
 
 footer input {
