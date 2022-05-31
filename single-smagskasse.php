@@ -30,7 +30,7 @@ get_header(); ?>
                                 <p class="lagerinfo"></p>
                                 <p class="varenummer"></p>
                                 <p class="oltyper"></p>
-                                <button class="button aux-button">Tilføj til kurv</button>
+                                <button class="button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase">Tilføj til kurv</button>
                             </div>
                         </article>
         
