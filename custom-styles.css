@@ -142,6 +142,20 @@ p {
   padding-top: 3rem;
 }
 
+#container_produkt {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 65px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+/* dette gjorde jeg for at få knapperne til at være samme sted alle sammen (align horisontalt) */
+article.klikbar {
+  aspect-ratio: 4/9;
+  height: -webkit-fill-available;
+}
+
 .smagskasse-info {
   padding-top: 1rem;
   text-align: center;
