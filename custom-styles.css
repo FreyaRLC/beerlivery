@@ -148,7 +148,8 @@ p {
 
 /* dette gjorde jeg for at få knapperne til at være samme sted alle sammen (align horisontalt) */
 article.klikbar {
-  aspect-ratio: 4/9;
+  /* Har midlertidigt udkommenteret da det skaber omkring 1000px luft mellem singleview indholdet og footeren -Freya */
+  /* aspect-ratio: 4/9; */
   height: -webkit-fill-available;
 }
 
