@@ -61,7 +61,7 @@ get_header(); ?>
 <script>
     console.log("LoadSite")
 	 
-    // dette er et endpoint, her ser vi vores custom posts fordi der står "smagskasse" til sidst som er vores slug
+    // dette er et endpoint, her ser vi vores custom posts fordi der står "produkt" til sidst som er vores slug
 	const url = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/produkt?per_page=100";
     
     // denne skal bruges hvis man bruger kategorier
