@@ -54,6 +54,7 @@ get_header(); ?>
 
 <script>
 
+
     let smagskasse;
     document.addEventListener("DOMContentLoaded", getJson);
 

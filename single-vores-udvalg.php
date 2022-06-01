@@ -54,6 +54,9 @@ get_header(); ?>
 
 <script>
 
+    console.log("detvirker")
+
+
     let produkt;
     document.addEventListener("DOMContentLoaded", getJson);
 
@@ -85,8 +88,8 @@ get_header(); ?>
           
           
         }
-
-     document.querySelector(".tilbage").addEventListener("click", ()=>{ history.back()});
+    // Dette var hvis vi ønskede en tilbage knap
+    //  document.querySelector(".tilbage").addEventListener("click", ()=>{ history.back()});
 </script>
 
 <?php get_sidebar('footer'); ?>
