@@ -17,7 +17,7 @@ get_header(); ?>
                 <div id="primary" class="aux-primary" >
                     <div class="content" role="main"  >
         
-                    <button class="tilbage button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase" >Tilbage</button>
+                    <!-- <button class="tilbage button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase" >Tilbage</button> -->
 
                         <article class="klikbar">
                             <div class="single-grid">
@@ -36,8 +36,8 @@ get_header(); ?>
                                 
                                 </div>
                                 </div>
-                                <p class="indhold-titel"></p>
-                                <p class="smagskasse-indhold"></p>
+                                <p class="indholdtitel"></p>
+                                <p class="smagskasseindhold"></p>
                                
                         </article>
         
@@ -80,8 +80,8 @@ get_header(); ?>
           document.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
 
 
-          document.querySelector(".indhold-titel").innerHTML = smagskasse.indhold-titel;
-          document.querySelector(".smagskasse-indhold").innerHTML = smagskasse.smagskasse-indhold;
+          document.querySelector(".indholdtitel").innerHTML = smagskasse.indholdtitel;
+          document.querySelector(".smagskasseindhold").innerHTML = smagskasse.smagskasseindhold;
 
 
           
