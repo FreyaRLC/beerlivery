@@ -169,6 +169,10 @@ hr {
   font-size: var(--lille-tekst);
 }
 
+.lagerinfo {
+  color: var(--secondary-blue);
+}
+
 .smagskasseindhold {
   padding-bottom: 3rem;
 }
