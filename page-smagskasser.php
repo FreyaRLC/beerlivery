@@ -12,7 +12,7 @@ get_header(); ?>
 
 
  <template>
-        <article class="klikbar">
+        <article class="singleview">
           <img class="billede" src="" alt="" />
           <div class="smagskasse-info">
             <p class="typeprodukt"></p>

@@ -19,7 +19,7 @@ get_header(); ?>
         
                     <!-- <button class="tilbage button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase" >Tilbage</button> -->
 
-                        <article class="klikbar">
+                        <article class="singleview">
                             <div class="single-grid">
                                 <img class="billede" src="" alt="" />
                                 <div class="single-tekst">
