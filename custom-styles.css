@@ -161,6 +161,10 @@ hr {
   padding-right: 0px;
 }
 
+.aux-resp .right-sidebar > .aux-wrapper > .aux-container {
+  padding-right: 0px;
+}
+
 .typeprodukt {
   font-size: var(--lille-tekst);
 }
@@ -176,7 +180,7 @@ hr {
 @media (min-width: 1200px) {
   .single-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.03fr 1fr;
   }
 
   .single-tekst {
