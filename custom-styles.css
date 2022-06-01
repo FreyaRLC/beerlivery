@@ -12,6 +12,19 @@
   max-height: 95px;
 }
 
+@media (max-width: 767px) {
+  /* dette er så logo er i venstre side i mobil version */
+  .elementor-80
+    .elementor-element.elementor-element-e54af10.elementor-column
+    > .elementor-widget-wrap {
+    justify-content: left;
+  }
+  /* dette er så logo ikke bliver småt i mobil version  */
+  .elementor-80 .elementor-element.elementor-element-c12b46a .aux-has-logo img {
+    width: 100%;
+  }
+}
+
 /* Max width på logo i footer og sunhedsstyrelsen id ting*/
 .elementor-element.elementor-element-7cff924.elementor-widget.elementor-widget-image
   img,
