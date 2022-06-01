@@ -52,6 +52,15 @@ footer input {
   border: solid 1px white !important;
 }
 
+/* styling til det menupunkt man er inde på */
+.elementor-80
+  .elementor-element.elementor-element-2c4c1ed
+  .aux-menu-depth-0.current-menu-item
+  > a {
+  color: #65a5ac;
+  text-decoration: underline !important;
+}
+
 /* font styling mobil */
 h1,
 h2 {
