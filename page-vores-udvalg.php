@@ -61,25 +61,25 @@ get_header(); ?>
 <script>
     console.log("LoadSite")
 	 
-    // dette er et endpoint, her ser vi vores custom posts fordi der står "udvalg" til sidst som er vores slug
-	const url = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/vores-udvalg?per_page=100";
+    // dette er et endpoint, her ser vi vores custom posts fordi der står "smagskasse" til sidst som er vores slug
+	const url = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/produkt?per_page=100";
     
     // denne skal bruges hvis man bruger kategorier
     const caturl = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/categories";
 	
 	
-	let udvalg;
+	let produkter;
 
     hentData(url);
 
 	async function hentData() {
         const respons = await fetch(url);
-        udvalg = await respons.json();
-        visUdvalg();
+        produkter = await respons.json();
+        visProdukter();
       }
 
-	    function visUdvalg() {
-			console.log({ udvalg });
+	    function visProdukter() {
+			console.log({ produkter });
 
 			const container = document.querySelector("#container");
        		const template = document.querySelector("template");
@@ -87,15 +87,15 @@ get_header(); ?>
             // her sletter den det tekst der kunne stå i forvejen (kun brugt når der er filtrering)   
 			container.textContent = "";
 
-			udvalg.forEach((udvalg) => {
+			produkter.forEach((produkt) => {
             	const klon = template.cloneNode(true).content;
-            	klon.querySelector(".billede").src = udvalg.billede.guid;
-            	klon.querySelector(".typeprodukt").textContent = udvalg.typeprodukt;
-              klon.querySelector(".titel").textContent = udvalg.title.rendered;
-            	klon.querySelector(".pris").textContent = udvalg.pris + " kr.";
+            	klon.querySelector(".billede").src = produkt.billede.guid;
+            	klon.querySelector(".typeprodukt").textContent = produkt.typeprodukt;
+              klon.querySelector(".titel").textContent = produkt.title.rendered;
+            	klon.querySelector(".pris").textContent = produkt.pris + " kr.";
             	klon
               		.querySelector("article")
-              		.addEventListener("click", () => { location.href = udvalg.link; })
+              		.addEventListener("click", () => { location.href = produkt.link; })
             	container.appendChild(klon);
         });
       }
