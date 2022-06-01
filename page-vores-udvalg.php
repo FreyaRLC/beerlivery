@@ -44,7 +44,7 @@ get_header(); ?>
                         <h2>Her ser du vores udvalg af specialøl og spiritus fra danske bryggerier.</h2>
 
                         <div id="filtrering"><button class="button aux button" data-bryggeri="alle">Alle</button></div>
-                       <section id="container container_produkt"></section>
+                       <section id="container" class="container_produkt"></section>
 
 
                     </div><!-- end content -->
