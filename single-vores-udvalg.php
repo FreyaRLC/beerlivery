@@ -23,7 +23,7 @@ get_header(); ?>
                             <div class="single-grid">
                                 <img class="billede" src="" alt="" />
                                 <div class="single-tekst">
-                                    <h2 class="titel"></h2>
+                                    <h2 class="titel titel_loop_produkt"></h2>
                                     <p class="pris"></p>
                                     <p class="kortbeskrivelse"></p>
                                     <p class="lagerinfo"></p>
