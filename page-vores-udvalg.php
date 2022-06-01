@@ -43,7 +43,7 @@ get_header(); ?>
                         <p>Vi har et bredt udvalg af danske speciaøl og danskproduceret Whiskey og Gin. Alt sammen er af højeste kvalitet specielt udvalgt fra nogle af landets bedste nano- og mikrobryggerier og destillerier.</p>
                         <h2>Her ser du vores udvalg af specialøl og spiritus fra danske bryggerier.</h2>
 
-                        <div id="filtrering"><button data-bryggeri="alle">Alle</button></div>
+                        <div id="filtrering"><button class="button aux button" data-bryggeri="alle">Alle</button></div>
                        <section id="container"></section>
 
 
@@ -89,7 +89,7 @@ get_header(); ?>
         categories.forEach((cat) => {
           document.querySelector(
             "#filtrering"
-          ).innerHTML += `<button class="filter" data-bryggeri="${cat.id}">${cat.name}</button>`;
+          ).innerHTML += `<button class="filter button aux button" data-bryggeri="${cat.id}">${cat.name}</button>`;
         });
 
         addEventListenersToButtons();
