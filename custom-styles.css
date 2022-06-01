@@ -147,7 +147,7 @@ hr {
   font-size: var(--lille-tekst);
 }
 
-.smagskasseIndhold {
+.smagskasseindhold {
   padding-bottom: 3rem;
 }
 
@@ -165,7 +165,7 @@ hr {
     padding-top: 3rem;
   }
 
-  .smagskasseIndhold {
+  .smagskasseindhold {
     column-count: 2;
   }
 }

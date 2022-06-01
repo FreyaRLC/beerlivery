@@ -36,8 +36,8 @@ get_header(); ?>
                                 
                                 </div>
                                 </div>
-                                <p class="indholdTitel"></p>
-                                <p class="smagskasseIndhold"></p>
+                                <p class="indholdtitel"></p>
+                                <p class="smagskasseindhold"></p>
                                
                         </article>
         
@@ -80,8 +80,8 @@ get_header(); ?>
           document.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
 
 
-          document.querySelector(".indholdTitel").innerHTML = smagskasse.indholdTitel;
-          document.querySelector(".smagskasseIndhold").innerHTML = smagskasse.smagskasseIndhold;
+          document.querySelector(".indholdtitel").innerHTML = smagskasse.indholdtitel;
+          document.querySelector(".smagskasseindhold").innerHTML = smagskasse.smagskasseindhold;
 
 
           
