@@ -81,8 +81,6 @@ get_header(); ?>
           document.querySelector(".oltyper").textContent = produkt.oltyper;
           document.querySelector(".typeprodukt").textContent = produkt.typeprodukt;
         
-          document.querySelector(".indholdtitel").innerHTML = produkt.indholdtitel;
-          document.querySelector(".produktindhold").innerHTML = produkt.smagskasseindhold;
 
 
           
