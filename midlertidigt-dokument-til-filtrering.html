@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="filtrering"><button data-bryggeri="alle">Alle</button></div>
+
+    <script>
+      let categories;
+      let filterBryggeri = "alle";
+
+      // denne skal bruges hvis man bruger kategorier
+      const caturl =
+        "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/categories";
+
+      // I async function getJson
+
+      async function getJson() {
+        const catdata = await fetch(catUrl);
+        categories = await catdata.json();
+        console.log(categories);
+        opretKnapper();
+      }
+      // opretter knapperne alt efter de kategorier vi har
+      function opretKnapper() {
+        categories.forEach((cat) => {
+          document.querySelector(
+            "#filtrering"
+          ).innerHTML += `<button class="filter" data-bryggeri="${cat.id}">${cat.name}</button>`;
+        });
+
+        addEventListenersToButtons();
+      }
+
+      // tilføjer eventlisteners til knapper
+      function addEventListenersToButtons() {
+        document.querySelectorAll("#filtrering button").forEach((element) => {
+          element.addEventListener("click", filtering);
+        });
+      }
+
+      function filtrering() {
+        filterBryggeri = this.dataset.bryggeri;
+        console.log(filterBryggeri);
+
+        visUdvalg();
+      }
+
+      function visUdvalg() {
+        // tømmer container så indhold ikke bliver lagt på igen og igen og igen hver gang man filtrerer
+        container.innerHTML = "";
+        produkter.forEach((produkt) => {
+          // hvis bryggeri.categories inkluderer filterBryggeri så skal det efterfølgende script køres.
+          // parseint gør tekst-streng til tal igen (da WP kategorierne er tal et dette nødvendigt)
+          if (
+            filterBryggeri == "alle" ||
+            bryggeri.categories.includes(parseInt(filterBryggeri))
+          ) {
+            // klon blah blah
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
