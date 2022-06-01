@@ -62,7 +62,7 @@ get_header(); ?>
     console.log("LoadSite")
 	 
     // dette er et endpoint, her ser vi vores custom posts fordi der står "udvalg" til sidst som er vores slug
-	const url = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/udvalg?per_page=100";
+	const url = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/vores-udvalg?per_page=100";
     
     // denne skal bruges hvis man bruger kategorier
     const caturl = "https://freyaluntang.dk/kea/eksamensprojekt/beerlivery_wp/wp-json/wp/v2/categories";
