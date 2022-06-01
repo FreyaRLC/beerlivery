@@ -89,6 +89,12 @@ p {
   }
 }
 
+/* forside */
+
+#knap-smagskasse-forside {
+  align-self: flex-end;
+}
+
 /* smagskasser loop side */
 
 .smagskasser-header {
@@ -148,6 +154,10 @@ hr {
 }
 
 .smagskasseindhold {
+  padding-bottom: 3rem;
+}
+
+.single-grid {
   padding-bottom: 3rem;
 }
 

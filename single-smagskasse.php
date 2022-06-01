@@ -21,23 +21,22 @@ get_header(); ?>
 
                         <article class="klikbar">
                             <div class="single-grid">
-                            <img class="billede" src="" alt="" />
-                            <div class="single-tekst">
-                            <h2 class="titel"></h2>
-                            <p class="pris"></p>
-                                <p class="kortbeskrivelse"></p>
-                                <p class="lagerinfo"></p>
-                                <button class="button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase">Tilføj til kurv</button>
-                                <p class="varenummer lille_tekst"></p>
-                                <hr>
-                                <p class="langbeskrivelse"></p>
-                                <p class="oltyper"></p>
-                                <p class="typeprodukt"></p>
-                                
+                                <img class="billede" src="" alt="" />
+                                <div class="single-tekst">
+                                    <h2 class="titel"></h2>
+                                    <p class="pris"></p>
+                                    <p class="kortbeskrivelse"></p>
+                                    <p class="lagerinfo"></p>
+                                    <button class="button aux-button aux-medium aux-carmine-pink aux-none aux-uppercase">Tilføj til kurv</button>
+                                    <p class="varenummer lille_tekst"></p>
+                                    <hr>
+                                    <p class="langbeskrivelse"></p>
+                                    <p class="oltyper"></p>
+                                    <p class="typeprodukt"></p>
                                 </div>
-                                </div>
-                                <p class="indholdtitel"></p>
-                                <p class="smagskasseindhold"></p>
+                            </div>
+                            <p class="indholdtitel"></p>
+                            <p class="smagskasseindhold"></p>
                                
                         </article>
         
@@ -78,8 +77,7 @@ get_header(); ?>
           document.querySelector(".langbeskrivelse").textContent = smagskasse.langbeskrivelse;
           document.querySelector(".oltyper").textContent = smagskasse.oltyper;
           document.querySelector(".typeprodukt").textContent = smagskasse.typeprodukt;
-
-
+        
           document.querySelector(".indholdtitel").innerHTML = smagskasse.indholdtitel;
           document.querySelector(".smagskasseindhold").innerHTML = smagskasse.smagskasseindhold;
 
