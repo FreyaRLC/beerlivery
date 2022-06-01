@@ -130,10 +130,6 @@ p {
   background-size: cover;
 }
 
-.titel_loop_produkt {
-  font-size: 24px;
-}
-
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -226,4 +222,15 @@ hr {
   .smagskasseindhold {
     column-count: 2;
   }
+}
+
+/* produkter loopside */
+
+div#filtrering {
+  display: flex;
+  gap: 1rem;
+}
+
+.titel_loop_produkt {
+  font-size: 24px;
 }
