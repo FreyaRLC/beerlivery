@@ -63,7 +63,8 @@ footer input {
 
 /* font styling mobil */
 h1,
-h2 {
+h2,
+.indholdtitel {
   font-family: "Akshar", sans-serif;
 }
 
@@ -75,7 +76,8 @@ h1 {
   font-size: 24px;
 }
 
-h2 {
+h2,
+.indholdtitel {
   font-size: 20px;
   font-weight: 300;
 }
@@ -93,7 +95,8 @@ p {
   h1 {
     font-size: 36px;
   }
-  h2 {
+  h2,
+  .indholdtitel {
     font-size: 30px;
   }
 }
