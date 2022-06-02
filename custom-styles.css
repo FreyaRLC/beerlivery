@@ -12,6 +12,15 @@
   max-height: 95px;
 }
 
+main a {
+  color: var(--primary-orange) !important;
+  text-decoration: underline !important;
+}
+
+main a:hover {
+  color: var(--secondary-beige) !important;
+}
+
 @media (max-width: 767px) {
   /* dette er så logo er i venstre side i mobil version */
   .elementor-80
