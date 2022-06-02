@@ -38,10 +38,19 @@ button,
   cursor: pointer;
 }
 
-.button {
+button.button {
   background-color: var(--primary-blue) !important;
   color: white !important;
   text-shadow: none !important;
+}
+
+button.button:hover {
+  background-color: var(--secondary-blue) !important;
+}
+
+/* styling specifikt til filter buttons */
+button.filter {
+  width: auto;
 }
 
 /* Alt text i footer skal være hvidt */
