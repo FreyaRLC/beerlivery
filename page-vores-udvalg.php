@@ -38,12 +38,16 @@ get_header(); ?>
                     <div class="content main-smagskasser" role="main"  >
 
                        <!-- Dette er den container alle hvor alt info bliver puttet ind efter template er kopieret og loopet igennem med json -->
-	 
-                       <div class="smagskasser-header"></div> 
-                        <p>Vi har et bredt udvalg af danske speciaøl og danskproduceret Whiskey og Gin. Alt sammen er af højeste kvalitet specielt udvalgt fra nogle af landets bedste nano- og mikrobryggerier og destillerier.</p>
-                        <h2>Her ser du vores udvalg af specialøl og spiritus fra danske bryggerier.</h2>
+	                    
+                        <div class="smagskasser-header"></div> 
 
-                        <div id="filtrering"><button class="button aux button" data-bryggeri="alle">Alle</button></div>
+                      <div class="produkt-header">
+                        <h2>Her ser du vores udvalg af specialøl og spiritus fra danske bryggerier.</h2>
+                        <div class="produkt-menu">
+                        <p>Vi har et bredt udvalg af danske speciaøl og danskproduceret Whiskey og Gin. Alt sammen er af højeste kvalitet specielt udvalgt fra nogle af landets bedste nano- og mikrobryggerier og destillerier.</p>
+                        <div id="filtrering"><button class="button aux button filter valgt" data-bryggeri="alle">Alle</button></div>
+                      </div>
+                    </div>
                        <section id="container" class="container_produkt"></section>
 
 
@@ -104,6 +108,8 @@ get_header(); ?>
 
       function filtrering() {
         filterBryggeri = this.dataset.bryggeri;
+        document.querySelector(".valgt").classList.remove("valgt");
+        this.classList.add("valgt");
         console.log(filterBryggeri);
 
         visProdukter();

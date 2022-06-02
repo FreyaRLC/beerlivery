@@ -50,9 +50,41 @@ button.button:hover {
 
 /* styling specifikt til filter buttons */
 button.filter {
-  width: auto;
+  min-width: 200px;
+  padding: 15px 35px;
+}
+div#filtrering {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* styling til den aktive/valgte filterknap */
+button.valgt {
+  /* background: var(--secondary-blue) !important; */
+  text-decoration: underline;
+}
+
+/* max bredde på <p> i produkt menu */
+.produkt-menu p {
+  max-width: 60ch;
+}
+
+/* styling til filtrering og øverste <p> tekst på produkt loopview siden på desktop*/
+@media (min-width: 1200px) {
+  .produkt-menu {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 10px;
+  }
+  div#filtrering {
+    justify-content: end;
+  }
+  .produkt-header {
+    margin: 0 30px;
+  }
+}
 /* Alt text i footer skal være hvidt */
 footer p,
 footer h1,
@@ -238,11 +270,6 @@ hr {
 }
 
 /* produkter loopside */
-
-div#filtrering {
-  display: flex;
-  gap: 1rem;
-}
 
 .titel_loop_produkt {
   font-size: 24px;
