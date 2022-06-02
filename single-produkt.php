@@ -77,7 +77,7 @@ get_header(); ?>
           document.querySelector(".kortbeskrivelse").textContent = produkt.kortbeskrivelse;
           document.querySelector(".lagerinfo").textContent = produkt.lagerinfo;
           document.querySelector(".varenummer").textContent = produkt.varenummer;
-          document.querySelector(".langbeskrivelse").textContent = produkt.langbeskrivelse;
+          document.querySelector(".langbeskrivelse").innerHTML = produkt.langbeskrivelse;
           document.querySelector(".oltyper").textContent = produkt.oltyper;
           document.querySelector(".typeprodukt").textContent = produkt.typeprodukt;
         
