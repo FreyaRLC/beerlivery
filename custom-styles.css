@@ -15,6 +15,7 @@
 main a {
   color: var(--primary-orange) !important;
   text-decoration: underline !important;
+  font-weight: bold !important;
 }
 
 main a:hover {
