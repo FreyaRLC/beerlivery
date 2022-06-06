@@ -39,7 +39,7 @@ get_header(); ?>
 
                        <!-- Dette er den container alle hvor alt info bliver puttet ind efter template er kopieret og loopet igennem med json -->
 	                    
-                        <div class="smagskasser-header"></div> 
+                      
 
                       <div class="produkt-header">
                         <h2>Her ser du vores udvalg af specialøl og spiritus fra danske bryggerier.</h2>

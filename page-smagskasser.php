@@ -39,10 +39,11 @@ get_header(); ?>
 
                        <!-- Dette er den container alle hvor alt info bliver puttet ind efter template er kopieret og loopet igennem med json -->
 	 
-                       <div class="smagskasser-header"></div> 
-                        <p>Vi har blandet nogle af vores mest velsmagende og spændende øl i smagskasser, så du kan få en blandet kasse med lige den øltype, du bedst kan lide.</p>
-                        <h2>Her ser du vores sortiment af smagskasser.</h2>
+                       <div class="smagskasser-header">
+                       <h2>Her ser du vores sortiment af smagskasser.</h2>
 
+                        <p>Vi har blandet nogle af vores mest velsmagende og spændende øl i smagskasser, så du kan få en blandet kasse med lige den øltype, du bedst kan lide.</p>
+                        </div> 
      
                        <section id="container"></section>
 

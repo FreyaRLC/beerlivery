@@ -91,7 +91,8 @@ button.valgt {
   div#filtrering {
     justify-content: end;
   }
-  .produkt-header {
+  .produkt-header,
+  .smagskasser-header {
     margin: 0 30px;
   }
 }
@@ -154,6 +155,7 @@ h3 {
 
 p {
   font-size: 16px;
+  max-width: 60ch;
 }
 
 /* font styling desktop */
@@ -175,13 +177,6 @@ p {
 
 /* smagskasser loop side */
 
-.smagskasser-header {
-  width: 100%;
-  max-height: 390px;
-  background-image: url(billeder/specialøl-billede-1.jpg);
-  background-size: cover;
-}
-
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -200,9 +195,6 @@ p {
 
 /* dette gjorde jeg for at få knapperne til at være samme sted alle sammen (align horisontalt) */
 article.klikbar {
-  /* Har midlertidigt udkommenteret da det skaber omkring 1000px luft mellem singleview indholdet og footeren -Freya */
-  /* aspect-ratio: 4/9;
-  height: -webkit-fill-available; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -218,11 +210,6 @@ article.klikbar {
 }
 
 @media (min-width: 1200px) {
-  .smagskasser-header {
-    padding: unset;
-    width: 100vw;
-    max-height: 390px;
-  }
 }
 
 /* singleview smagskasser */
