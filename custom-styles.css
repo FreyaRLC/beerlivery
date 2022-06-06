@@ -285,3 +285,7 @@ hr {
 .titel_loop_produkt {
   font-size: 24px;
 }
+
+.aux-content-top-margin .aux-primary {
+  padding-top: 0 !important;
+}
