@@ -72,7 +72,6 @@ div#filtrering {
 
 /* styling til den aktive/valgte filterknap */
 button.valgt {
-  /* background: var(--secondary-blue) !important; */
   text-decoration: underline;
 }
 
